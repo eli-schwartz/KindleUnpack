@@ -4,7 +4,9 @@
 
 from __future__ import unicode_literals, division, absolute_import, print_function
 
-import sys
+import sys, os
+
+sys.path.insert(0, os.path.dirname(__file__))
 
 from lib.compatibility_utils import PY2, text_type, unicode_str
 from lib.compatibility_utils import unicode_argv, add_cp65001_codec
@@ -12,7 +14,6 @@ from lib.compatibility_utils import unicode_argv, add_cp65001_codec
 import lib.unipath as unipath
 from lib.unipath import pathof
 
-import os
 import traceback
 
 import codecs
